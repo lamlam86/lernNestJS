@@ -44,3 +44,7 @@ const productInStock = products.filter(function(value,index)
     return value.inStock === true
 })
 console.log(productInStock)
+for(let key in product1)
+{
+    console.log(product1[key])
+}

@@ -1,16 +1,9 @@
-const score = [10,19,2,29,30,11,18,33]
-
-const scoreThan18 = score.filter(function(value,index)
+const bt = document.getElementById("bt1")
+const name1 = document.getElementById("name")
+function handleclick()
 {
-    return value > 18;
-})
-console.log(scoreThan18)
-let testOj = {
-    "age" : 19,
-    "name" : "NguyenMinhLam",
-    "NoiSinh" : "BinhThuan"
+    console.log(name1.value)
+    document.getElementById("mess").innerHTML = name1.value
+    localStorage.setItem("1",name1.value)
 }
-for(let key in testOj)
-{
-    console.log(key);
-}
+bt.addEventListener("click",handleclick)
